@@ -514,6 +514,14 @@ span.total-section-num
     font-weight: 700;
 }
 
+.small-text
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
+}
+
 
 /* ===================================
     2. Home Section
@@ -2329,6 +2337,18 @@ footer a:hover
     }
 
     .medium-text br
+    {
+        display: none;
+    }
+
+    .small-text
+    {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .small-text br
     {
         display: none;
     }
