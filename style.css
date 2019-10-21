@@ -155,6 +155,11 @@ body p, body pre
     position: relative !important;
 }
 
+.content-wrapper ul
+{
+    padding-left: 16px;
+}
+
 .color-black
 {
     color: #000;
@@ -218,7 +223,6 @@ body p, body pre
 .menu-holder
 {
     float: right;
-    max-width: 80%;
 }
 
 .toggle-holder
@@ -241,7 +245,13 @@ body p, body pre
     height: 3px;
     margin-bottom: 6px;
     background-color: #000;
-    width: 22px;
+    width: 24px;
+}
+
+#toggle .first-menu-line
+{
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 #toggle .second-menu-line
@@ -258,14 +268,29 @@ body p, body pre
     transform: translate3d(0,0,0) !important;
 }
 
-#toggle.on .second-menu-line {
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-}
-
 #toggle .third-menu-line
 {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
     margin-bottom: 5px;
+}
+
+#toggle.on .first-menu-line {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-transform: translate3d(0px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+}
+
+#toggle.on .second-menu-line {
+    display: none;
+}
+
+#toggle.on .third-menu-line {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    -webkit-transform: translate3d(0px, -5px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
 }
 
 #header-main-menu
@@ -1915,11 +1940,6 @@ footer a:hover
         line-height: 28px;
     }
 
-    .menu-holder
-    {
-        max-width: 75%;
-    }
-
 }
 
 @media screen and (min-width: 1025px) {
@@ -2161,6 +2181,18 @@ footer a:hover
         display: none;
     }
 
+    .medium-text {
+        text-align: center;
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .small-text {
+        text-align: center;
+        font-size: 27px;
+        line-height: 32px;
+    }
+
     .v-skill
     {
         width: 100%;
@@ -2267,6 +2299,26 @@ footer a:hover
         float: none;
         margin-right: 0;
         margin-left: 0;
+        text-align: left;
+    }
+
+    .menu-holder
+    {
+      width: 100%
+    }
+
+    #header-main-menu {
+      width: 100%;
+    }
+
+    #header-main-menu ul li a {
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 18px 0px;
+    }
+
+    #clients .one_fourth
+    {
         text-align: center;
     }
 
@@ -2333,7 +2385,7 @@ footer a:hover
     {
         font-size: 27px;
         line-height: 35px;
-        text-align: center;
+        text-align: left;
     }
 
     .medium-text br
@@ -2345,6 +2397,11 @@ footer a:hover
     {
         font-size: 20px;
         line-height: 28px;
+        text-align: left;
+    }
+
+    #home .small-text
+    {
         text-align: center;
     }
 
@@ -2380,6 +2437,18 @@ footer a:hover
     {
         font-size: 30px;
         line-height: 35px;
+    }
+
+    .medium-text
+    {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .small-text
+    {
+        font-size: 17px;
+        line-height: 22px;
     }
 
     a.button
@@ -2462,6 +2531,15 @@ footer a:hover
     .blog-item-holder .entry-date.published:after, .single .entry-info div:after
     {
         display: none;
+    }
+
+}
+
+@media screen and (max-width: 585px) {
+
+    #slider1 .owl-item
+    {
+        height: 96px;
     }
 
 }
