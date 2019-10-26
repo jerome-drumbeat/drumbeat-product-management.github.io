@@ -2317,6 +2317,11 @@ footer a:hover
       padding: 18px 0px;
     }
 
+    #home
+    {
+        background-image: none;
+    }
+
     #clients .one_fourth
     {
         text-align: center;
