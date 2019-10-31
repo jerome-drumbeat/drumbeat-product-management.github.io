@@ -36,7 +36,7 @@
 ====================================== */
 body
 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     line-height: 27px;
     font-weight: 400;
@@ -434,7 +434,7 @@ body .sm-clean a:hover, body .sm-clean li.active a
 
 .section h2.entry-title
 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Audiowide', cursive;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
@@ -554,11 +554,28 @@ span.total-section-num
 
 #home
 {
-    background-image: url(images/bg_elements.png);
+    /* background-image: url(images/bg_elements.png);*/
     background-color: #ffffff;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+#home h1
+{
+    font-family: 'Audiowide', cursive;
+    color: #0367A6;
+}
+
+#home h2
+{
+    /*font-family: 'Audiowide', cursive;*/
+    color: #048ABF
+}
+
+#home a.button
+{
+    background-color: #04C4D9;
 }
 
 #slider1 .owl-nav, #slider1 .owl-dots {
