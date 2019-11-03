@@ -564,7 +564,7 @@ span.total-section-num
 #home h1
 {
     font-family: 'Audiowide', cursive;
-    color: #0367A6;
+    color: #0059a7;
 }
 
 #home h2
@@ -575,7 +575,7 @@ span.total-section-num
 
 #home a.button
 {
-    background-color: #04C4D9;
+    background-color: #ffa113;
 }
 
 #slider1 .owl-nav, #slider1 .owl-dots {
