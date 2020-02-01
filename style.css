@@ -544,20 +544,20 @@ span.total-section-num
 #home h1
 {
     font-family: 'Montserrat', sans-serif;
-    color: #0578A6;
+    color: #094899;
     margin-bottom: 20px;
 }
 
 #home h2
 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #069DBF;
 }
 
 #home a.button
 {
-    background-color: #d98d1c;
     font-variant: small-caps;
+    background-color: #F2A616;
 }
 
 #slider1 .owl-nav, #slider1 .owl-dots {
@@ -588,7 +588,7 @@ footer
     background-repeat: no-repeat;
     background-size: auto;
     background-position: center top;
-    background-color: #364259;
+    background-color: #272F40;
 }
 
 footer ul
