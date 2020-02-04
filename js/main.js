@@ -58,9 +58,6 @@ jQuery(document).on('ready', function () {
         jQuery(this).attr('placeholder', jQuery(this).data('placeholder'));
     });
 
-    //Fit Video
-    jQuery(".site-content").fitVids();
-
     //Fix for Default menu
     jQuery(".default-menu ul:first").addClass('sm sm-clean main-menu');
 

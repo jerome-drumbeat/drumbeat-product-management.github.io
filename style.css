@@ -131,6 +131,10 @@ body p, body pre
     padding-left: 16px;
 }
 
+.content-wrapper p, .content-wrapper ul {
+    max-width: 700px;
+}
+
 .content-wrapper .small-text
 {
     color: #364259;
@@ -408,7 +412,7 @@ body .sm-clean a:hover, body .sm-clean li.active a
     line-height: 42px;
     text-align: center;
     margin-bottom: 0;
-    color: #0578A6;
+    color: #0052CC;
     padding-top: 0px;
     font-weight: 600;
 }
@@ -429,7 +433,7 @@ body .sm-clean a:hover, body .sm-clean li.active a
 
 .section-title-holder
 {
-    width: 300px;
+    max-width: 350px;
     position: relative;
 }
 
@@ -530,7 +534,7 @@ span.total-section-num
 #home h1
 {
     font-family: 'Montserrat', sans-serif;
-    color: #094899;
+    color: #0052CC;
     margin-bottom: 20px;
 }
 
@@ -542,7 +546,6 @@ span.total-section-num
 
 #home a.button
 {
-    font-variant: small-caps;
     background-color: #F2A616;
 }
 
@@ -550,8 +553,8 @@ span.total-section-num
   display: none;
 }
 
-#services .content-wrapper .small-text,
-#services div.section-wrapper div.section-title-holder h2.entry-title,
+#when-drumbeat .content-wrapper .small-text,
+#when-drumbeat div.section-wrapper div.section-title-holder h2.entry-title,
 #why-drumbeat .content-wrapper .small-text,
 #why-drumbeat div.section-wrapper div.section-title-holder h2.entry-title
 {
@@ -596,7 +599,7 @@ footer a:hover
 
 .footer-content
 {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 20px;
     width: 900px;
 }
